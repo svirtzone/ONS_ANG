@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ONS</title>
+  <!-- <base href="/"> -->
+  <base href="/ONS/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+</head>
+<script type="text/javascript">
+  var $jq = jQuery.noConflict();
+$jq(document).ready(function(){
+      $jq('.customer-logos').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: true,
+        dots: false,
+          pauseOnHover: false,
+          responsive: [{
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 4
+          }
+        }, {
+          breakpoint: 520,
+          settings: {
+            slidesToShow: 1
+          }
+        }]
+      });
+    });
+  </script>
+
+  <style type="text/css">
+    site-sidebar{
+      width:20% !important;
+      float:left;
+    }
+    app-to-do{
+      width: 77% !important;
+      float: left;
+      margin-top: 45px;
+    }
+    .sidebar-con{
+      width: 90% !important;
+      float: right;
+    }
+    .slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+button.slick-prev.slick-arrow {
+    position: relative;
+    top: 155px;
+    left: 22px;
+    z-index: 10000;
+    background: url(http://szwebprofile.com/Ang/images/play-2.png) !important;
+    color: transparent;
+    border: 0px;
+    cursor: pointer !important;
+    padding: 10px;
+    background-repeat: no-repeat !important;
+}
+button.slick-next.slick-arrow {
+    float: right;
+    position: relative;
+    top: -206px;
+    right: 9px;
+    cursor: pointer !important;
+    z-index: 10000;
+    background: url(http://szwebprofile.com/Ang/images/play-3.png) !important;
+    color: transparent;
+    border: 0px;
+    padding: 10px;
+    background-repeat: no-repeat !important;
+}
+  </style>
+<body>
+  <app-root></app-root>
+</body>
+</html>

@@ -1,0 +1,555 @@
+.pad0{
+	padding: 0px;
+}
+
+.footer-bottom {
+    background: #37454d;
+    width: 100%;
+    padding: 17px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-bottom p{
+	margin: 0px;
+	font-size: 12px;
+}
+
+.footer-top {
+    background: #293339;
+    padding: 40px 0px 30px;
+    color: #fff;
+}
+
+.footer-top li{
+	list-style-type: none;
+}
+
+
+.footer-col {
+    width: 20%;
+    float: left;
+}
+
+
+.footer-top li a {
+    color: #fff;
+    padding: 5px 0px;
+    display: block;
+    font-size: 12px;
+}
+
+.footer-top h5 {
+    font-size: 18px;
+}
+
+.sidebar-sec {
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px #f5f5f5;
+}
+
+.sidebar-sec h4 {
+    background: #f5f5f5;
+    margin: 0px;
+    padding: 10px 15px;
+    color: #000000;
+    font-weight: 500;
+}
+
+.prod-fecility {
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.prod-fecility h5 {
+    font-size: 16px;
+    color: #f37638;
+    font-weight: 500;
+}
+
+.all-cate{
+	margin: 20px 0px;
+}
+.all-cate a {
+    display: block;
+    padding: 7px 10px;
+    font-size: 13px;
+}
+
+.banner-images {
+    background-image: url(http://szwebprofile.com/Ang/images/banner.png);
+    color: #fff;
+    text-align: center;
+    padding: 90px 0px;
+}
+
+.prod-fecility p{
+	font-size: 13px;
+}
+
+
+.logo h2 {
+    color: #f37638;
+    margin: 0px;
+    font-weight: 600;
+    font-size: 24px;
+        padding-top: 7px;
+}
+
+ul.header-one-left li a {
+    color: #116db4;
+    font-size: 12px;
+}
+
+ul{
+	padding-left: 0px;
+}
+
+ul.header-one-left li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 20px 0px 0px;
+}
+
+ul.header-one-right li {
+    display: inline-block;
+        padding-left: 10px
+}
+
+ul.header-one-right li a{
+	font-size: 12px;
+}
+
+button.place-ad {
+    padding-left: 30px;
+    color: #f37638;
+    border: 1px solid #f37638;
+    background-color: transparent;
+    background-image: url(http://szwebprofile.com/Ang/images/placedad.png);
+    background-repeat: no-repeat;
+    padding: 6px;
+    border-radius: 5px;
+    padding-left: 30px;
+    background-position: 2px 2px;
+}
+
+.header-one {
+    padding: 13px 0px 5px;
+    border-bottom: 2px dashed #ccc;
+}
+
+.header-two li {
+    /* display: inline-block; */
+    border: 1px solid #dfdfdf;
+    float: left;
+  
+    height: 42px;
+    list-style-type: none;
+}
+
+
+.header-two li input{
+	border:0px;
+	height: 40px;
+	width: 100%;
+	padding-left: 10px;
+}
+
+
+.header-two li select{
+	border:0px;
+	height: 40px;
+	width: 100%;
+	padding-left: 10px;
+}
+
+li.mobile-search {
+    width: 30%;
+}
+
+li.select-cat {
+    width: 20%;
+}
+
+li.postal-code{
+width: 20%;
+}
+
+li.all-distance{
+width: 20%;
+}
+
+li.srach-btn{
+	width: 10%;
+	border:0px;
+}
+
+li.srach-btn button{
+	height: 42px;
+	background-color:#f37638;
+	border:1px solid #f37638;
+	width: 100%;
+	text-align: center;
+	font-weight: 600;
+	color: #fff;
+}
+a.messages {
+    background-image: url(http://szwebprofile.com/Ang/images/message.png);
+    background-repeat: no-repeat;
+    padding: 4px 0px;
+    background-position: 0px 0px;
+    padding-left: 30px;
+}
+
+
+a.notifications {
+    background-image: url(http://szwebprofile.com/Ang/images/notification.png);
+    background-repeat: no-repeat;
+    padding: 4px 0px;
+    background-position: 0px 0px;
+    padding-left: 26px;
+}
+
+
+a.login {
+    background-image: url(http://szwebprofile.com/Ang/images/profile.png);
+    background-repeat: no-repeat;
+    padding: 4px 0px;
+    background-position: 0px 0px;
+    padding-left: 26px;
+}
+
+ul.header-one-right{
+   text-align: right;
+}
+
+.header-two {
+    padding: 20px 0px;
+    width: 100%;
+}
+
+.header-three li {
+    display: inline-block;
+    padding-right: 20px;
+    /* padding: 0px; */
+}
+
+.header-three li a{
+   font-size: 14px;
+   color: #000;
+}
+
+.header-three select {
+    font-weight: 600;
+    border: 0px;
+}
+
+
+.header-three {
+    padding-bottom: 15px;
+}
+
+ul.header-one-left {
+    padding-top: 7px;
+}
+
+.product-section {
+    border: 1px solid #ccc;
+    display: inline-block;
+    border-top: 0px;
+    width: 100%;
+        margin-bottom: 26px;
+}
+
+.prod-title h4 {
+    font-size: 16px;
+    margin: 0px;
+}
+
+.prod-location p{
+    color: #888888;
+    font-size: 12px;
+}
+
+.prod-price h3 {
+    margin: 0px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.prod-price li {
+    display: inline-block;
+    color: #888;
+    font-size: 12px;
+}
+
+.prod-price {
+    border-left: 4px solid #eb6320;
+    padding: 6px 0px;
+    padding-left: 8px;
+}
+
+.pro-banner img {
+    width: 100%;
+}
+
+.pro-offer {
+    text-align: right;
+    top: -40px;
+    position: relative;
+}
+
+.pro-offer a {
+    background: #eb6320;
+    color: #fff;
+    border-radius: 14px;
+    padding: 5px 12px;
+    font-size: 12px;
+}
+
+.prod-title {
+    margin-bottom: 10px;
+}
+
+
+.app-store-top h3 {
+    color: #f37638;
+    font-weight: 500;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.app-store-top h5 {
+    font-size: 22px;
+    line-height: 35px;
+}
+
+
+.app-store-foot li {
+    display: inline-block;
+    width:49%;
+}
+
+
+.app-store-foot li img{
+   width: 100%;
+}
+
+.app-store-foot p{
+	font-size: 12px;
+	color: #888;
+}
+
+.app-store-top {
+    background-color: #f5f5f5;
+    padding: 20px 0px;
+    border-top: 1px solid #dcdcdc;
+}
+
+
+.app-store-bottom img {
+    position: relative;
+    top: 191px;
+    margin-top: -100px;
+}
+
+.app-store-foot {
+    padding-top: 58px;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    background-image: url(http://szwebprofile.com/Ang/images/select-arrow.png);
+    background-repeat: no-repeat;
+    background-position: 100% 60%;
+}
+
+.socila-icons li a {
+    font-size: 24px;
+}
+
+
+.socila-icons li {
+    display: inline-block;
+    padding: 10px 16px 0px 0px;
+}
+
+section.page-body-secs {
+    padding: 50px 0px 0px;
+}
+
+
+button.slick-prev.slick-arrow {
+    position: relative;
+    top: 155px;
+    left: 22px;
+    z-index: 10000;
+    background: url(http://szwebprofile.com/Ang/images//play-2.png) !important;
+    color: transparent;
+    border: 0px;
+    cursor: pointer !important;
+    padding: 10px;
+    background-repeat: no-repeat !important;
+}
+
+button.slick-next.slick-arrow {
+    float: right;
+    position: relative;
+   top: -206px;
+    right: 9px;
+    cursor: pointer !important;
+    z-index: 10000;
+    background: url(http://szwebprofile.com/Ang/images/play-3.png) !important;
+    color: transparent;
+    border: 0px;
+    padding: 10px;
+    background-repeat: no-repeat !important;
+}
+
+
+.pro-offer {
+    height: 20px;
+}
+
+
+section.fresh-posted .col-md-4:nth-child(even) .prod-price {
+    border-left: 4px solid transparent;
+
+}
+
+
+.header-three select {
+    padding-right: 30px;
+}
+
+
+
+    
+/* Slider */
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
