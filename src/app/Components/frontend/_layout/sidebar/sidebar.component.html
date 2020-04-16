@@ -25,23 +25,8 @@
 
          <h4>All Categories</h4>
          <div class="all-cate">
-          <a>Antique and Art </a>
-           <a>Audio, TV and Photo</a>
-           <a>Cars</a>
-           <a>Car parts</a>
-           <a>Car miscellaneous</a>
-           <a>Books</a>
-           <a>Caravans and Camping</a>
-           <a>CDs and DVDs</a>
-           <a>Computer and Software</a>
-           <a>Contacts and Messages</a>
-           <a>Services and Professionals</a>
-           <a>Animals and Accessories</a>
-           <a>Bicycles and Mopeds</a>
-           <a>Hobby and Leisure</a>
-           <a>Houses and Rooms</a>
-           <a>Home Appliances</a>
-           <a>Miscellaneous</a>
+           <a *ngFor="let Home of HomeList"> {{Home}} </a>
+           
          </div>
 
 

@@ -60,11 +60,12 @@
 
   <div class="header-three">
     <div class="container">
-      <li><select>
-        <option>All Categories</option>
-      </select></li>
-      <li><a>
-      Cars </a> </li>   <li><a>Motorcycles</a> </li>     <li><a>Mobile Phones </a> </li>    <li><a>House & Apartments</a> </li>    <li><a> Scooters</a> </li>    <li><a> Commercial Vehicles</a> </li>     <li><a>Sofa & Dining </a> </li>    <li><a>Computer & Laptops </a> </li>    <li><a>Tablets</a> </li>
+      <li>
+        <select>
+          <option>All Categories</option>
+        </select>
+      </li>
+      <li *ngFor="let Home of HomeList"><a>{{Home}} </a> </li>
     </div>
   </div>
 </header>

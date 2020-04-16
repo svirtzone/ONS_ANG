@@ -2,16 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { select, Store } from '@ngrx/store';
 import { Observable, Subscription } from 'rxjs';
 import { map } from 'rxjs/operators';
-import * as HomeActions from '../action/home.action';
-import Home from '../model/home.model';
-import HomeState from '../state/home.state';
+import * as HomeActions from '../../../../action/home.action';
+import Home from '../../../../model/home.model';
+import HomeState from '../../../../state/home.state';
 
 @Component({
-  selector: 'app-to-do',
-  templateUrl: './home.component.html',
-  styleUrls: ['./_layout/header/header.component.css']
+  selector: 'site-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HeaderComponent implements OnInit {
+
   constructor(private store: Store<{ Homes: HomeState }>) {
     this.Home$ = store.pipe(select('Homes'));
   }
@@ -50,4 +51,5 @@ export class HomeComponent implements OnInit {
       this.HomeSubscription.unsubscribe();
     }
   }
+
 }

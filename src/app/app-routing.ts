@@ -1,9 +1,9 @@
 import { Routes, RouterModule } from '@angular/router';
-import { LayoutComponent } from './Components/_layout/layout/layout.component';
-import { HeaderComponent } from './Components/_layout/header/header.component';
-import { SidebarComponent } from './Components/_layout/sidebar/sidebar.component';
-import { FooterComponent } from './Components/_layout/footer/footer.component';
-import { HomeComponent } from './Components/home.component';
+import { LayoutComponent } from './Components/frontend/_layout/layout/layout.component';
+import { HeaderComponent } from './Components/frontend/_layout/header/header.component';
+import { SidebarComponent } from './Components/frontend/_layout/sidebar/sidebar.component';
+import { FooterComponent } from './Components/frontend/_layout/footer/footer.component';
+import { HomeComponent } from './Components/frontend/home/home.component';
 
 
 const appRoutes: Routes = [

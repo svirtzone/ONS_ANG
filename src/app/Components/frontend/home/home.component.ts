@@ -7,12 +7,11 @@ import Home from '../../../model/home.model';
 import HomeState from '../../../state/home.state';
 
 @Component({
-  selector: 'site-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  selector: 'app-to-do',
+  templateUrl: './home.component.html',
+  styleUrls: ['../_layout/header/header.component.css']
 })
-export class HeaderComponent implements OnInit {
-
+export class HomeComponent implements OnInit {
   constructor(private store: Store<{ Homes: HomeState }>) {
     this.Home$ = store.pipe(select('Homes'));
   }
@@ -51,5 +50,4 @@ export class HeaderComponent implements OnInit {
       this.HomeSubscription.unsubscribe();
     }
   }
-
 }
