@@ -1,12 +1,9 @@
 import { Routes, RouterModule } from '@angular/router';
-
-
-
-import { LayoutComponent } from './ToDo/Components/_layout/layout/layout.component';
-import { HeaderComponent } from './ToDo/Components/_layout/header/header.component';
-import { SidebarComponent } from './ToDo/Components/_layout/sidebar/sidebar.component';
-import { FooterComponent } from './ToDo/Components/_layout/footer/footer.component';
-import { ToDoComponent } from './ToDo/Components/to-do.component';
+import { LayoutComponent } from './Components/_layout/layout/layout.component';
+import { HeaderComponent } from './Components/_layout/header/header.component';
+import { SidebarComponent } from './Components/_layout/sidebar/sidebar.component';
+import { FooterComponent } from './Components/_layout/footer/footer.component';
+import { HomeComponent } from './Components/home.component';
 
 
 const appRoutes: Routes = [
@@ -16,27 +13,10 @@ const appRoutes: Routes = [
         path: '', 
         component: LayoutComponent,
         children: [
-          { path: '', component: ToDoComponent, pathMatch: 'full'},
-          // { path: 'about', component: AboutComponent },
-          // { path: 'test/:id', component: AboutComponent }
+          { path: '', component: HomeComponent, pathMatch: 'full'},
         ]
     },
     
-    // App routes goes here here
-    // { 
-    //     path: '',
-    //     component: AppLayoutComponent, 
-    //     children: [
-    //       { path: 'dashboard', component: DashboardComponent },
-    //       { path: 'profile', component: ProfileComponent }
-    //     ]
-    // },
-
-    // //no layout routes
-    // { path: 'login', component: LoginComponent},
-    // { path: 'register', component: RegisterComponent },
-    // // otherwise redirect to home
-    // { path: '**', redirectTo: '' }
 ];
 
 export const routing = RouterModule.forRoot(appRoutes);
