@@ -5,6 +5,7 @@ import { map } from 'rxjs/operators';
 import * as HomeActions from '../../../../action/home.action';
 import Home from '../../../../model/home.model';
 import HomeState from '../../../../state/home.state';
+import { TranslateService } from '@ngx-translate/core'; 
 
 @Component({
   selector: 'site-header',
@@ -13,8 +14,17 @@ import HomeState from '../../../../state/home.state';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private store: Store<{ Homes: HomeState }>) {
+  constructor(private store: Store<{ Homes: HomeState }>,public translate: TranslateService) {
     this.Home$ = store.pipe(select('Homes'));
+
+    translate.addLangs(['en', 'fr']);  
+    if (localStorage.getItem('locale')) {  
+      const browserLang = localStorage.getItem('locale');  
+      translate.use(browserLang.match(/en|fr/) ? browserLang : 'en');  
+    } else {  
+      localStorage.setItem('locale', 'en');  
+      translate.setDefaultLang('en');  
+    }  
   }
 
   ngOnInit() {
@@ -51,5 +61,10 @@ export class HeaderComponent implements OnInit {
       this.HomeSubscription.unsubscribe();
     }
   }
+
+  changeLang(language: string) {  
+    localStorage.setItem('locale', language);  
+    this.translate.use(language);  
+  }  
 
 }

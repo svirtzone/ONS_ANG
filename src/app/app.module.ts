@@ -1,4 +1,4 @@
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule,HttpClient } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -15,6 +15,13 @@ import { HeaderComponent } from './Components/frontend/_layout/header/header.com
 import { SidebarComponent } from './Components/frontend/_layout/sidebar/sidebar.component';
 import { FooterComponent } from './Components/frontend/_layout/footer/footer.component';
 
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+
+export const createTransalateLoader=(http: HttpClient) =>{
+  return new TranslateHttpLoader(http,'./assets/i18n/' , '.json');
+}
+
 @NgModule({
   declarations: [AppComponent, HomeComponent,LayoutComponent,HeaderComponent,SidebarComponent,FooterComponent],
   // declarations: [AppComponent, HomeComponent,LayoutComponent],
@@ -24,6 +31,13 @@ import { FooterComponent } from './Components/frontend/_layout/footer/footer.com
     routing,
     FormsModule,
     HttpClientModule,
+    TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: createTransalateLoader,
+                deps: [HttpClient]
+            }
+        }),
     StoreModule.forRoot({ Homes: HomeReducer }),
     EffectsModule.forRoot([HomeEffects])
   ],

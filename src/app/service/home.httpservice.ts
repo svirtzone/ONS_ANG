@@ -6,7 +6,6 @@ import Home from '../model/home.model';
 @Injectable({
   providedIn: 'root'
 })
-
 export class HomeHttpService {
   // private ApiURL: string = 'https://localhost:44308/api/ToDo';
   private ApiURL: string = 'http://szwebprofile.com/PHP/api/list.php';

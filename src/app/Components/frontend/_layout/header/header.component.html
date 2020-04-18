@@ -31,11 +31,17 @@
         <li>
           <button class="place-ad">Place ad</button>
         </li>
+        <li>
+          <label>Select Language </label>
+          <select #langSelect (change)="changeLang(langSelect.value)" class="language">  
+              <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>  
+          </select> 
+        </li>
       </ul>
     </div>
   </div>
   </div>
-
+   
   <div class="header-two">
     <div class="container">
       <ul>
@@ -48,7 +54,7 @@
           <li class="postal-code"><input type="text" name="" placeholder="Postal code"></li>
            <li class="all-distance">
              <select>
-               <option>All distances</option>
+               <option>{{ 'Home' | translate }}</option>
              </select>
            </li>
             <li class="srach-btn">
