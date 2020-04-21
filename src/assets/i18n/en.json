@@ -7,5 +7,6 @@
     "Cancel": "Cancel",  
     "Home": "Home",  
     "Employee": "Employee",  
-    "EmployeeList": "Employee List"  
+    "EmployeeList": "Employee List",
+    "Header_list" : [{"id" : "Help and info"},{"id" : "Requirements"},{"id" : "Safe trading"}]
 }

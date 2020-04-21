@@ -8,29 +8,13 @@
         </div>
       </div>
       <ul class="header-one-left">
-        <li><a>Help and info</a>    
-        </li>
-        <li>    <a>Requirements</a> 
-        </li>
-        <li>
-           <a>Safe trading</a>
-        </li>
+       <li *ngFor="let Li of labels"> {{ Li }} </li>
       </ul>
-
     </div>
      <div class="col-md-6">
-
        <ul class="header-one-right">
-        <li><a class="messages">Messages</a>    
-        </li>
-        <li>    <a class="notifications">Notifications</a> 
-        </li>
-        <li>
-           <a class="login">Login</a>
-        </li>
-        <li>
-          <button class="place-ad">Place ad</button>
-        </li>
+        <li *ngFor="let menu of menus" [innerHTML]="menu"> </li>
+        <li><button class="place-ad">Place ad</button></li>
         <li>
           <label>Select Language </label>
           <select #langSelect (change)="changeLang(langSelect.value)" class="language">  
@@ -44,33 +28,36 @@
    
   <div class="header-two">
     <div class="container">
-      <ul>
-        <li class="mobile-search"><input type="text" placeholder="Search by car, mobile and more"></li>
-         <li class="select-cat"><select>
-           <ng-container *ngFor="let Home of HomeList">
-                <option >{{Home}}</option>
+      <form [formGroup]="complexForm" (ngSubmit)="submitForm(complexForm.value)">
+        <ul>
+          <li class="mobile-search">
+            <input type="text" formControlName="mobile" placeholder="Search by car, mobile and more">
+            <div class="haserror" *ngIf="complexForm.get('mobile').hasError('required') && complexForm.get('mobile').touched">This field is required</div>
+          </li>
+           <li class="select-cat"><select>
+             <ng-container *ngFor="let Home of HomeList">
+                  <option >{{Home}}</option>
               </ng-container>
-         </select></li>
-          <li class="postal-code"><input type="text" name="" placeholder="Postal code"></li>
-           <li class="all-distance">
-             <select>
-               <option>{{ 'Home' | translate }}</option>
-             </select>
-           </li>
-            <li class="srach-btn">
-              <button>search</button>
+           </select></li>
+            <li class="postal-code">
+              <input type="text"  formControlName="postal" placeholder="Postal code">
+              <div class="haserror" *ngIf="complexForm.get('postal').hasError('required') && complexForm.get('postal').touched">This field is required</div>
             </li>
-      </ul>
+             <li class="all-distance">
+               <select>
+                 <option>{{ 'Home' | translate }}</option>
+               </select>
+             </li>
+              <li class="srach-btn">
+                <button [disabled]="!complexForm.valid">search</button>
+              </li>
+        </ul>
+      </form>
     </div>
   </div>
 
   <div class="header-three">
     <div class="container">
-      <li>
-        <select>
-          <option>All Categories</option>
-        </select>
-      </li>
       <li *ngFor="let Home of HomeList"><a>{{Home}} </a> </li>
     </div>
   </div>

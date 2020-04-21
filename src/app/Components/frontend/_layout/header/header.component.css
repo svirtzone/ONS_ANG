@@ -553,3 +553,6 @@ section.fresh-posted .col-md-4:nth-child(even) .prod-price {
 .slick-arrow.slick-hidden {
     display: none;
 }
+.haserror{
+    color: red;
+}
