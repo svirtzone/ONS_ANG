@@ -98,4 +98,9 @@ export class HeaderComponent implements OnInit {
     
   }  
 
+
+  submitForm(value: any) {
+
+  }
+
 }

@@ -4,75 +4,32 @@
       <div class="sidebar-sec">
         <h4>Featured</h4>
 
-         <div class="prod-fecility">
-          <img src="../../../../assets/images/fecar.png">
-          <h5>Cars</h5>
-          <p>> 7500 new occasions per day</p>
+         <div class="prod-fecility" *ngFor="let f_val of Featured">
+            <img src="../../../../assets/images/{{f_val.image}}">
+            <h5>{{f_val.name}}</h5>
+            <p> {{f_val.description}}</p>
          </div>
 
-         <div class="prod-fecility">
-          <img src="../../../../assets/images/fe-truck.png">
-          <h5>Send</h5>
-          <p>Label and track & trace directly in your Messages</p>
-         </div>
-
-
-         <div class="prod-fecility">
-          <img src="../../../../assets/images/fe-hand.png">
-          <h5>Crossing immediately </h5>
-          <p>Extra security when paying and shipping</p>
-         </div>
-
-         <h4>All Categories</h4>
+        <h4>All Categories</h4>
+         
          <div class="all-cate">
            <a *ngFor="let Home of HomeList"> {{Home}} </a>
-           
          </div>
 
+        <h4>For the buyer</h4>
 
-
-          <h4>For the buyer</h4>
-
-         <div class="prod-fecility">
-          <img src="../../../../assets/images/fe-hand.png">
-          <h5>Crossing immediately</h5>
-          <p>Then your money back!</p>
+         <div class="prod-fecility" *ngFor="let b_val of Buyer">
+            <img src="../../../../assets/images/{{b_val.image}}">
+            <h5>{{b_val.name}}</h5>
+            <p> {{b_val.description}}</p>
          </div>
 
-         <div class="prod-fecility">
-          <img src="../../../../assets/images/fe-truck.png">
-          <h5>Business goods</h5>
-          <p> A good deal for entrepreneurs</p>
-         </div>
+        <h4>For the seller</h4>
 
-
-         <div class="prod-fecility">
-          <img src="../../../../assets/images/feservice.png">
-          <h5>Services and Professionals </h5>
-          <p> Find your professional</p>
-         </div>
-
-
-
-                   <h4>For the seller</h4>
-
-         <div class="prod-fecility">
-          <img src="../../../../assets/images/fe-speaker.png">
-          <h5>Marketplace Stand</h5>
-          <p>Then your money back!</p>
-         </div>
-
-         <div class="prod-fecility">
-          <img src="../../../../assets/images/fe-sakend.png">
-          <h5>Packages</h5>
-          <p> Extra stand out with your  company and advertisements</p>
-         </div>
-
-
-         <div class="prod-fecility">
-          <img src="../../../../assets/images/fe-hand.png">
-          <h5>Services and Professionals</h5>
-          <p> Offer your service</p>
+         <div class="prod-fecility" *ngFor="let s_val of Seller">
+            <img src="../../../../assets/images/{{s_val.image}}">
+            <h5>{{s_val.name}}</h5>
+            <p> {{s_val.description}}</p>
          </div>
       </div>
     <!-- </div> -->

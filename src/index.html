@@ -20,6 +20,7 @@
 <script type="text/javascript">
   var $jq = jQuery.noConflict();
 $jq(document).ready(function(){
+  setTimeout(function(){
       $jq('.customer-logos').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -40,6 +41,8 @@ $jq(document).ready(function(){
           }
         }]
       });
+  },500);
+      
     });
   </script>
 

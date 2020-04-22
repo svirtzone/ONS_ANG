@@ -5,6 +5,7 @@ import { map } from 'rxjs/operators';
 import * as HomeActions from '../../../../action/home.action';
 import Home from '../../../../model/home.model';
 import HomeState from '../../../../state/home.state';
+import { DataService } from '../../../../service/sidebar.httpservice'; 
 
 @Component({
   selector: 'site-sidebar',
@@ -13,27 +14,29 @@ import HomeState from '../../../../state/home.state';
 })
 export class SidebarComponent implements OnInit {
 
-  constructor(private store: Store<{ Homes: HomeState }>) {
-    this.Home$ = store.pipe(select('Homes'));
+  HomeList:any;
+  Featured:any;
+  Buyer:any;
+  Seller:any;
+  constructor(private dataService: DataService) {
+    
   }
 
   ngOnInit() {
-    this.HomeSubscription = this.Home$
-      .pipe(
-        map(x => {
-          this.HomeList = x.Homes;
-          this.HomeError = x.HomeError;
-        })
-      )
-      .subscribe();
+        
+        this.dataService.sendGetRequest().subscribe((data: any[])=>{
+          this.Featured = data['1'];
+          this.Buyer = data['2'];
+          this.Seller = data['3'];
+        });
 
-    this.store.dispatch(HomeActions.BeginGetHomeAction());
+        this.dataService.sendGetRequest_data().subscribe((data: any[])=>{
+          this.HomeList = data;
+        });
+
   }
 
-  Home$: Observable<HomeState>;
-  HomeSubscription: Subscription;
-  HomeList: Home[] = [];
-  HomeError: Error = null;
+  
 
  
 
