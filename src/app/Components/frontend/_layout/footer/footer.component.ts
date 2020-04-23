@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable, Subscription } from 'rxjs';
+import { map } from 'rxjs/operators';
+import { DataService } from '../../../../service/footer.httpservice'; 
 
 @Component({
   selector: 'site-footer',
@@ -6,10 +9,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['../header/header.component.css']
 })
 export class FooterComponent implements OnInit {
-
-  constructor() { }
+  f_data:any;
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
+
+  	this.dataService.sendGetRequest().subscribe((data: any[])=>{
+          this.f_data = data;
+        });
   }
 
 }
