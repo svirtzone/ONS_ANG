@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable, Subscription } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { DataService } from '../../../../service/footer.httpservice'; 
+import { DataService } from '../../service/footer.httpservice'; 
 
 @Component({
   selector: 'site-footer',

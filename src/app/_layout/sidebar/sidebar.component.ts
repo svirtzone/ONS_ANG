@@ -1,11 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { select, Store } from '@ngrx/store';
-import { Observable, Subscription } from 'rxjs';
-import { map } from 'rxjs/operators';
-import * as HomeActions from '../../../../action/home.action';
-import Home from '../../../../model/home.model';
-import HomeState from '../../../../state/home.state';
-import { DataService } from '../../../../service/sidebar.httpservice'; 
+import { DataService } from '../../service/sidebar.httpservice'; 
 
 @Component({
   selector: 'site-sidebar',

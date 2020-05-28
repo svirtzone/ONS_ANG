@@ -77,7 +77,7 @@
 }
 
 .banner-images {
-    background-image: url(../../../../../assets/images/banner.png);
+    background-image: url(../../../assets/images/banner.png);
     color: #fff;
     text-align: center;
     padding: 90px 0px;
@@ -125,7 +125,7 @@ button.place-ad {
     color: #f37638;
     border: 1px solid #f37638;
     background-color: transparent;
-    background-image: url(../../../../../assets/images/placedad.png);
+    background-image: url(../../../assets/images/placedad.png);
     background-repeat: no-repeat;
     padding: 6px;
     border-radius: 5px;
@@ -194,7 +194,7 @@ li.srach-btn button{
 	color: #fff;
 }
 a.messages {
-    background-image: url(../../../../../assets/images/message.png);
+    background-image: url(../../../assets/images/message.png);
     background-repeat: no-repeat;
     padding: 4px 0px;
     background-position: 0px 0px;
@@ -203,7 +203,7 @@ a.messages {
 
 
 a.notifications {
-    background-image: url(../../../../../assets/images/notification.png);
+    background-image: url(../../../assets/images/notification.png);
     background-repeat: no-repeat;
     padding: 4px 0px;
     background-position: 0px 0px;
@@ -212,7 +212,7 @@ a.notifications {
 
 
 a.login {
-    background-image: url(../../../../../assets/images/profile.png);
+    background-image: url(../../../assets/images/profile.png);
     background-repeat: no-repeat;
     padding: 4px 0px;
     background-position: 0px 0px;
@@ -362,7 +362,7 @@ select {
     -moz-appearance: none;
     text-indent: 1px;
     text-overflow: '';
-    background-image: url(../../../../../assets/images/select-arrow.png);
+    background-image: url(../../../assets/images/select-arrow.png);
     background-repeat: no-repeat;
     background-position: 100% 60%;
 }
@@ -387,7 +387,7 @@ button.slick-prev.slick-arrow {
     top: 155px;
     left: 22px;
     z-index: 10000;
-    background: url(../../../../../assets/images//play-2.png) !important;
+    background: url(../../../assets/images//play-2.png) !important;
     color: transparent;
     border: 0px;
     cursor: pointer !important;
@@ -402,7 +402,7 @@ button.slick-next.slick-arrow {
     right: 9px;
     cursor: pointer !important;
     z-index: 10000;
-    background: url(../../../../../assets/images/play-3.png) !important;
+    background: url(../../../assets/images/play-3.png) !important;
     color: transparent;
     border: 0px;
     padding: 10px;
