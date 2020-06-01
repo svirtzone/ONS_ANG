@@ -1,7 +1,7 @@
 <header>
   <div class="header-one">
     <div class="container">
-    <div class="col-md-6">
+    <div class="col-md-4">
       <div class="col-md-3">
         <div class="logo">
           <h2>ONS</h2>
@@ -11,14 +11,15 @@
        <li *ngFor="let Li of labels"> {{ Li }} </li>
       </ul>
     </div>
-     <div class="col-md-6">
+     <div class="col-md-8">
        <ul class="header-one-right">
         <li *ngFor="let menu of menus" [innerHTML]="menu"> </li>
         <li><button class="place-ad">Place ad</button></li>
         <li>
-          <label>Select Language </label>
-          <select #langSelect (change)="changeLang(langSelect.value)" class="language">  
-              <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>  
+          <!-- <label>Select Language </label> -->
+          <select  (change)="changeLang(langSelect.value)" [(ngModel)]="book.pageLayout" class="language">  
+              <!-- <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>  -->
+              <option *ngFor="let lang of Country_List" [value]="lang.name" >{{ lang.name }}</option>  
           </select> 
         </li>
       </ul>

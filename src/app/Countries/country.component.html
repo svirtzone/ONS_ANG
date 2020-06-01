@@ -1,0 +1,20 @@
+<section class="world-section">
+<div class="container">
+    
+    <h2 class="subtitle heading heading-primary heading-h3 heading-bold heading-black heading-center">Your country does not has data please select one country from the countries below.</h2>
+    <div class="world-grid-container">
+        <h3 class="grid-title heading heading-primary heading-h4 heading-bold heading-black heading-center">Find your community below</h3>
+        <div class="world-grid flagged-countries">
+          <div class="country-wrapper" *ngFor="let countrylist of Country_List">
+              <a class="country"  (click)=home(countrylist.name)>
+                <div class="flag-wrapper">
+                <img class="flag" src="../../assets/images/flag.png" alt="Flag br"/>
+              </div>
+                <span class="country-title">{{countrylist.name}}</span>
+              </a>
+          </div>
+        </div>
+    </div>
+   
+</div>
+</section>

@@ -15,7 +15,12 @@ export class HeaderComponent implements OnInit {
   labels:any;
   menus:any;
   HomeList:any;
+  Country_List:any;
+  Selected_Country:any;
   complexForm: FormGroup;
+  public book: any = {
+   pageLayout: localStorage.getItem('country')
+}
 
   constructor(fb: FormBuilder,public translate: TranslateService,private dataService: DataService,private listService: HomeHttpService) {
     
@@ -38,10 +43,15 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
     // console.log(this.Header_list);
+    // this.Selected_Country=localStorage.getItem('country');
+    
     this.listService.sendGetRequest().subscribe((data: any[])=>{
           this.HomeList = data;
-        });
+    });
 
+    
+
+    this.getcountries();
     this.changeLang('en');
     
   }
@@ -64,7 +74,17 @@ export class HeaderComponent implements OnInit {
       })
     } 
     
-  }  
+  } 
+
+
+  getcountries(){
+
+    this.listService.Countries().subscribe((data: any[])=>{
+          this.Country_List = data.result;
+          
+          
+    });
+  } 
 
 
   submitForm(value: any) {

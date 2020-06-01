@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.dataService.sendGetRequest().subscribe((data: any[])=>{
           this.Featured = data['recent'];
-          // console.log(this.Featured);
+         
         });
   }
 

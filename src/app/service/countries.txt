@@ -1,0 +1,182 @@
+{
+    "message": "",
+    "httpStatus": 200,
+    "result": [
+        {
+            "id": "70cd883c-7555-45ee-8636-373b38bb27ca",
+            "name": "Palestine",
+            "code": "PS",
+            "langCode": "Arabic",
+            "currency": "ILS",
+            "flagImg": ""
+        },
+        {
+            "id": "574c9f99-bba1-4dda-abde-4095d4c30e50",
+            "name": "Iraq",
+            "code": "IQ",
+            "langCode": "Arabic;Kurdish",
+            "currency": "IQD",
+            "flagImg": ""
+        },
+        {
+            "id": "d3b239cd-39cc-4d89-935b-43dab799abf8",
+            "name": "Chad",
+            "code": "TD",
+            "langCode": "Arabic;French",
+            "currency": "XAF",
+            "flagImg": ""
+        },
+        {
+            "id": "9f4a90f9-8215-4afa-b8c7-4738f828ada5",
+            "name": "Kuwait",
+            "code": "KW",
+            "langCode": "Arabic",
+            "currency": "KWD",
+            "flagImg": ""
+        },
+        {
+            "id": "0508a0af-9d38-4c17-8963-5db2a1ea4e3e",
+            "name": "United Arab Emirates",
+            "code": "AE",
+            "langCode": "Arabic",
+            "currency": "AED",
+            "flagImg": ""
+        },
+        {
+            "id": "98c07f0d-ef47-4f76-913d-69ab21d78754",
+            "name": "Sudan",
+            "code": "SD",
+            "langCode": "Arabic",
+            "currency": "SDG",
+            "flagImg": ""
+        },
+        {
+            "id": "c75c6ecd-84de-4acb-bf1b-6ca9f44941a0",
+            "name": "Oman",
+            "code": "OM",
+            "langCode": "Arabic;English",
+            "currency": "OMR",
+            "flagImg": ""
+        },
+        {
+            "id": "cb054999-ad5c-4acc-b472-6cf985931f88",
+            "name": "Egypt",
+            "code": "EG",
+            "langCode": "Egyptian Arabic",
+            "currency": "EG",
+            "flagImg": ""
+        },
+        {
+            "id": "fafb3c53-1906-45f2-a12a-6e90bc9e147a",
+            "name": "Jordan",
+            "code": "JO",
+            "langCode": "Arabic",
+            "currency": "JOD",
+            "flagImg": ""
+        },
+        {
+            "id": "8f975b52-145d-4ed2-9e52-705698eddc5b",
+            "name": "Djibouti",
+            "code": "DJ",
+            "langCode": "French;Arabic",
+            "currency": "DJF",
+            "flagImg": ""
+        },
+        {
+            "id": "77c5064e-d6c4-4536-8e7c-727d516fc343",
+            "name": "Libbya",
+            "code": "LY",
+            "langCode": "Arabic",
+            "currency": "LYD",
+            "flagImg": ""
+        },
+        {
+            "id": "99aad598-e622-451a-8345-7f5fe623e6ce",
+            "name": "Somalia",
+            "code": "SO",
+            "langCode": "Somali;Arabic",
+            "currency": "SOS",
+            "flagImg": ""
+        },
+        {
+            "id": "caf4d1f5-c6c6-458e-9875-86646ca5e2f5",
+            "name": "Algeria",
+            "code": "DZ",
+            "langCode": "Arabic;Tamazight;French",
+            "currency": "DZD",
+            "flagImg": ""
+        },
+        {
+            "id": "fe132df2-350f-45e2-a925-9ef3d0c24267",
+            "name": "Morocco",
+            "code": "MA",
+            "langCode": "Arabic;Berber",
+            "currency": "MAD",
+            "flagImg": ""
+        },
+        {
+            "id": "1c4fa8fa-e65f-44ec-8784-a48c3ee0bf07",
+            "name": "Syria",
+            "code": "SY",
+            "langCode": "Arabic",
+            "currency": "SYP",
+            "flagImg": ""
+        },
+        {
+            "id": "4cc78cc0-cb91-446f-a801-b803a443b00f",
+            "name": "Mauritania",
+            "code": "MR",
+            "langCode": "Arabic",
+            "currency": "MRU",
+            "flagImg": ""
+        },
+        {
+            "id": "12bbf72c-dfe6-4a63-89cf-c2eb8bee2857",
+            "name": "Tunisia",
+            "code": "TN",
+            "langCode": "Arabic",
+            "currency": "TND",
+            "flagImg": ""
+        },
+        {
+            "id": "a68d992d-34e5-4b4a-9b24-c5497ec97202",
+            "name": "Yemen",
+            "code": "YE",
+            "langCode": "Arabic",
+            "currency": "YER",
+            "flagImg": ""
+        },
+        {
+            "id": "8424cf58-a30e-4f86-9fcd-c5a5bad7774b",
+            "name": "Lebanon",
+            "code": "LB",
+            "langCode": "Arabic",
+            "currency": "LBP",
+            "flagImg": ""
+        },
+        {
+            "id": "41e81d1e-9b6d-402c-a027-cf3a6087bd64",
+            "name": "Comoros",
+            "code": "KM",
+            "langCode": "Comorian;French;Arabic",
+            "currency": "KMF",
+            "flagImg": ""
+        },
+        {
+            "id": "ae8e1207-9a95-4977-b3f9-e0c7376da4f4",
+            "name": "Bahrain",
+            "code": "BH",
+            "langCode": "Arabic;English",
+            "currency": "BHD",
+            "flagImg": ""
+        },
+        {
+            "id": "a941a6d3-48cd-445e-a348-f76dca849993",
+            "name": "Saudi Arabia",
+            "code": "SA",
+            "langCode": "Arabic",
+            "currency": "SAR",
+            "flagImg": ""
+        }
+    ]
+}

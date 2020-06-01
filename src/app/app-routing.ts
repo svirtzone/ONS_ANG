@@ -5,7 +5,10 @@ export const ApplicationRoutes: Routes = [
     
     
     {
-        path: '', loadChildren: () => import('../app/home-directory/home.module').then(m => m.HomePageModule)
+        path: 'home', loadChildren: () => import('../app/home-directory/home.module').then(m => m.HomePageModule)
+    },
+    {
+        path: '', loadChildren: () => import('../app/Countries/country.module').then(m => m.CountryPageModule)
     }
     
 ];
