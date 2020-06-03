@@ -17,7 +17,7 @@
         <li><button class="place-ad">Place ad</button></li>
         <li>
           <!-- <label>Select Language </label> -->
-          <select  (change)="changeLang(langSelect.value)" [(ngModel)]="book.pageLayout" class="language">  
+          <select   [(ngModel)]="country.pageLayout" class="language">  
               <!-- <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>  -->
               <option *ngFor="let lang of Country_List" [value]="lang.name" >{{ lang.name }}</option>  
           </select> 
@@ -63,7 +63,173 @@
     </div>
   </div>
 </header>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+Launch demo modal
+</button>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog  login-popup-sectionn" role="document">
+      <div class="modal-content">
+         <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="pill" href="#home">Login</a></li>
+            <li><a data-toggle="pill" href="#menu1">Create an account</a></li>
+         </ul>
+         <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+               <div class="login-title-header" style="text-align: center;">
+                  <h3>Login</h3>
+               </div>
+               <div class="login-social-button">
+                  <button class="Facebook-btn">
+                  <span class="login-width-iccons"><img src="images/face-book.png"></span><span class="login-with-text">Log in with Facebook *</span>
+                  </button>
+                  <button class="google-plus-btn">
+                  <span class="login-width-iccons"><img src="images/google-plus.png"></span><span class="login-with-text">Log in with Google *</span>
+                  </button>
+               </div>
+               <div class="email-login-section">
+                  <div class="or-text">
+                     <p>Or log in with your email address</p>
+                  </div>
+                  <div class="col-md-12" style="float: none; margin: 0px auto;">
+                     <div class="col-md-12" style="padding-bottom: 10px;">
+                        <div class="row">
+                           <label class="col-md-3">E-mail address</label>
+                           <div class="col-md-9"><input type="textbox" placeholder="E-mail address"></div>
+                        </div>
+                     </div>
+                     <div class="col-md-12" style="padding-bottom: 10px;">
+                        <div class="row">
+                           <label class="col-md-3">Password</label>
+                           <div class="col-md-9"><input type="textbox" placeholder="Password"></div>
+                        </div>
+                     </div>
+                     <div class="col-md-12" style="padding-bottom: 10px;">
+                        <div class="row">
+                           <div class="col-md-3"></div>
+                           <div class="col-md-9">
+                              <div class=" mp-Toggle  check-toggle">
+                                 <label class="col-md-12" for="remember_me">
+                                 <input id="remember_me" name="remember_me" class="mp-Toggle-input" type="checkbox" tabindex="3" checked="checked" autocomplete="off" value="true">
+                                 <span class="mp-Toggle-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Stay logged in</font></font></span>
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-12" style="padding-bottom: 30px;">
+                        <div class="row">
+                           <div class="col-md-3"></div>
+                           <div class="col-md-9 pad0">
+                              <div class="col-md-12">
+                                 <p style="font-weight: 300;
+                                    font-size: 12px;
+                                    line-height: 16px;">Do you use a public or shared computer? 
+                                    Uncheck the box to stay logged in to protect your account.
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-12">
+                        <div class="row">
+                           <div class="col-md-3"></div>
+                           <div class="col-md-9" style="text-align: center;">
+                              <button class="email-login-button-section">Log in with your email address</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+               <div class="login-title-header" style="text-align: center;">
+                  <h3>Create an Account</h3>
+               </div>
+               <div class="login-social-button">
+                  <button class="Facebook-btn">
+                  <span class="login-width-iccons"><img src="images/face-book.png"></span><span class="login-with-text">Log in with Facebook *</span>
+                  </button>
+                  <button class="google-plus-btn">
+                  <span class="login-width-iccons"><img src="images/google-plus.png"></span><span class="login-with-text">Log in with Google *</span>
+                  </button>
+               </div>
+               <div class="email-login-section">
+                  <div class="or-text">
+                     <p>Or log in with your email address</p>
+                  </div>
+                  <form [formGroup]="RegisterForm" (ngSubmit)="Register(RegisterForm.value)">
+                    <div class="col-md-12" style="float: none; margin: 0px auto;">
+                       <div class="col-md-12" style="padding-bottom: 10px;">
+                          <div class="row">
+                             <label class="col-md-12">Your name on ONS</label>
+                             <div class="col-md-12">
+                                <input type="textbox" formControlName="name" placeholder="Name">
+                                <div class="haserror" *ngIf="RegisterForm.get('name').hasError('required') && RegisterForm.get('name').touched">This field is required</div>
+                             </div>
+                          </div>
 
+                       </div>
+                       <div class="col-md-12" style="padding-bottom: 10px;">
+                          <div class="row">
+                             <label class="col-md-12">E-mail address</label>
+                             <div class="col-md-12">
+                              <input type="textbox" formControlName="email" placeholder="Password">
+                              <div class="haserror" *ngIf="RegisterForm.get('email').hasError('required') && RegisterForm.get('email').touched">This field is required</div>
+                            </div>
+                          </div>
+                       </div>
+                       <div class="col-md-12" style="padding-bottom: 10px;">
+                          <div class="row">
+                             <label class="col-md-12">Password (at least 8 characters, case sensitive)</label>
+                             <div class="col-md-12">
+                              <input type="textbox" formControlName="password" placeholder="Password">
+                              <div class="haserror" *ngIf="RegisterForm.get('password').hasError('required') && RegisterForm.get('password').touched">This field is required</div>
+                            </div>
+                          </div>
+                       </div>
+                       <div class="col-md-12" style="padding-bottom: 10px;">
+                          <div class="row">
+                             <label class="col-md-12">Repeat password * (for verification)</label>
+                             <div class="col-md-12">
+                              <input type="textbox" formControlName="re-password" placeholder="Password">
+                              <div class="haserror" *ngIf="RegisterForm.get('re-password').hasError('required') && RegisterForm.get('re-password').touched">This field is required</div>
+                            </div>
+                          </div>
+                       </div>
+                       <div class="col-md-12" style="padding-bottom: 30px;">
+                          <div class="row">
+                             <div class="col-md-12"></div>
+                             <div class="col-md-12 pad0">
+                                <div class="col-md-12">
+                                   <p style="font-weight: 300;
+                                      font-size: 12px;
+                                      line-height: 16px;">We will regularly send you emails related to our services. You can unsubscribe from these marketing emails at any time via this link , or via the unsubscribe link in the emails themselves.
+                                      * By creating an account with your email address or by logging in with Facebook or Google, you become a customer of Ons and you accept our Terms of Use and Privacy Statement . You will receive system messages related to your ads and customer service messages.
+                                   </p>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="col-md-12">
+                          <div class="row">
+                             <div class="col-md-6">
+                                <button class="email-login-button-section-cancel-btn">cancel</button>
+                             </div>
+                             <div class="col-md-6" style="text-align: right;">
+                                <button [disabled]="!RegisterForm.valid" class="email-login-button-section">create an account</button>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                  </form>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </div>
+</div> 
 <section>
   <div class="banner-images">
     <h1>Buy, Sell and Find Just About Anything</h1>

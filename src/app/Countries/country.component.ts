@@ -17,7 +17,8 @@ export class CountryComponent implements OnInit {
   ngOnInit() {
     this.dataService.Useripinfo().subscribe((data: any[])=>{
           
-          this.Country_name=data.country;
+          // this.Country_name=data.country;
+          this.Country_name=data;
 
     });
 
@@ -29,8 +30,10 @@ export class CountryComponent implements OnInit {
 
   is_exist(country){
 
-    this.dataService.Countries().subscribe((data: any[])=>{
+    this.dataService.Countries().subscribe((data: any)=>{
           this.Country_List = data.result;
+          console.log(this.Country_List);
+
           var isPresent = this.Country_List.some(function(el){ return el.name === country});
           if(isPresent == true){
             localStorage.setItem('country',country);

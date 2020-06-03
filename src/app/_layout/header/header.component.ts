@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit {
   Country_List:any;
   Selected_Country:any;
   complexForm: FormGroup;
-  public book: any = {
+  public country: any = {
    pageLayout: localStorage.getItem('country')
 }
 
@@ -29,6 +29,13 @@ export class HeaderComponent implements OnInit {
     this.complexForm = fb.group({
             'mobile': [null, Validators.required],
             'postal': [null, Validators.required]
+        });
+
+    this.RegisterForm = fb.group({
+            'name': [null, Validators.required],
+            'email': [null, Validators.required],
+            'password': [null, Validators.required],
+            're-password': [null, Validators.required],
         });
 
     translate.addLangs(['en', 'fr']);  
@@ -43,13 +50,11 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
     // console.log(this.Header_list);
-    // this.Selected_Country=localStorage.getItem('country');
+    this.Selected_Country=localStorage.getItem('country');
     
     this.listService.sendGetRequest().subscribe((data: any[])=>{
           this.HomeList = data;
     });
-
-    
 
     this.getcountries();
     this.changeLang('en');
@@ -82,9 +87,20 @@ export class HeaderComponent implements OnInit {
     this.listService.Countries().subscribe((data: any[])=>{
           this.Country_List = data.result;
           
-          
     });
   } 
+
+
+  Register(value: any){
+
+    let form = value;
+
+    
+    this.dataService.RegisterRequest(form).subscribe((data: any[])=>{
+          // this.HomeList = data;
+    });
+
+  }
 
 
   submitForm(value: any) {
