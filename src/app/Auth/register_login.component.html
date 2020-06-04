@@ -1,90 +1,19 @@
-<header>
-  <div class="header-one">
-    <div class="container">
-    <div class="col-md-4">
-      <div class="col-md-3">
-        <div class="logo">
-          <h2>ONS</h2>
-        </div>
-      </div>
-      <ul class="header-one-left">
-       <li *ngFor="let Li of labels"> {{ Li }} </li>
-      </ul>
-    </div>
-     <div class="col-md-8">
-       <ul class="header-one-right">
-        <li *ngFor="let menu of menus" [innerHTML]="menu"> </li>
-        <li><button class="place-ad">Place ad</button></li>
-        <li>
-          <!-- <label>Select Language </label> -->
-          <select   [(ngModel)]="country.pageLayout" class="language">  
-              <!-- <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>  -->
-              <option *ngFor="let lang of Country_List" [value]="lang.name" >{{ lang.name }}</option>  
-          </select> 
-        </li>
-      </ul>
-    </div>
-  </div>
-  </div>
-   
-  <div class="header-two">
-    <div class="container">
-      <form [formGroup]="complexForm" (ngSubmit)="submitForm(complexForm.value)">
-        <ul>
-          <li class="mobile-search">
-            <input type="text" formControlName="mobile" placeholder="Search by car, mobile and more">
-            <div class="haserror" *ngIf="complexForm.get('mobile').hasError('required') && complexForm.get('mobile').touched">This field is required</div>
-          </li>
-           <li class="select-cat"><select>
-             <ng-container *ngFor="let Home of HomeList">
-                  <option >{{Home}}</option>
-              </ng-container>
-           </select></li>
-            <li class="postal-code">
-              <input type="text"  formControlName="postal" placeholder="Postal code">
-              <div class="haserror" *ngIf="complexForm.get('postal').hasError('required') && complexForm.get('postal').touched">This field is required</div>
-            </li>
-             <li class="all-distance">
-               <select>
-                 <option>{{ 'Home' | translate }}</option>
-               </select>
-             </li>
-              <li class="srach-btn">
-                <button [disabled]="!complexForm.valid">search</button>
-              </li>
-        </ul>
-      </form>
-    </div>
-  </div>
-
-  <div class="header-three">
-    <div class="container">
-      <li *ngFor="let Home of HomeList"><a>{{Home}} </a> </li>
-    </div>
-  </div>
-</header>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-Launch demo modal
-</button>
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-   <div class="modal-dialog  login-popup-sectionn" role="document">
-      <div class="modal-content">
+<div class="modal-content">
          <ul class="nav nav-pills">
             <li class="active"><a data-toggle="pill" href="#home">Login</a></li>
             <li><a data-toggle="pill" href="#menu1">Create an account</a></li>
          </ul>
          <div class="tab-content">
-            <div id="home" class="tab-pane fade in active">
+            <div id="home" class="tab-pane fade active in show">
                <div class="login-title-header" style="text-align: center;">
                   <h3>Login</h3>
                </div>
                <div class="login-social-button">
                   <button class="Facebook-btn">
-                  <span class="login-width-iccons"><img src="images/face-book.png"></span><span class="login-with-text">Log in with Facebook *</span>
+                  <span class="login-width-iccons"><img src="../../assets/images/face-book.png"></span><span class="login-with-text">Log in with Facebook *</span>
                   </button>
                   <button class="google-plus-btn">
-                  <span class="login-width-iccons"><img src="images/google-plus.png"></span><span class="login-with-text">Log in with Google *</span>
+                  <span class="login-width-iccons"><img src="../../assets/images/google-plus.png"></span><span class="login-with-text">Log in with Google *</span>
                   </button>
                </div>
                <form [formGroup]="LoginForm" (ngSubmit)="Login(LoginForm.value)">
@@ -156,10 +85,10 @@ Launch demo modal
                </div>
                <div class="login-social-button">
                   <button class="Facebook-btn">
-                  <span class="login-width-iccons"><img src="images/face-book.png"></span><span class="login-with-text">Log in with Facebook *</span>
+                  <span class="login-width-iccons"><img src="../../assets/images/face-book.png"></span><span class="login-with-text">Log in with Facebook *</span>
                   </button>
                   <button class="google-plus-btn">
-                  <span class="login-width-iccons"><img src="images/google-plus.png"></span><span class="login-with-text">Log in with Google *</span>
+                  <span class="login-width-iccons"><img src="../../assets/images/google-plus.png"></span><span class="login-with-text">Log in with Google *</span>
                   </button>
                </div>
                <div class="email-login-section">
@@ -236,11 +165,3 @@ Launch demo modal
 
          </div>
       </div>
-   </div>
-</div> 
-<section>
-  <div class="banner-images">
-    <h1>Buy, Sell and Find Just About Anything</h1>
-  </div>
-</section>
-

@@ -17,5 +17,9 @@ export class RegisterLoginService {
     return this.httpClient.post(this.REST_API_SERVER_fr,form);
   }
 
+  public LoginRequest(form:any){
+    return this.httpClient.post(this.REST_API_SERVER_fr,form);
+  }
+
 
 }

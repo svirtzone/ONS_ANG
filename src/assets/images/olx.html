@@ -1,28 +1,25 @@
-<section class="world-section" style="display: none;">
-<div class="container">
-    
-    <h2 class="subtitle heading heading-primary heading-h3 heading-bold heading-black heading-center">Your country does not has data please select one country from the countries below.</h2>
-    <div class="world-grid-container">
-        <h3 class="grid-title heading heading-primary heading-h4 heading-bold heading-black heading-center">Find your community below</h3>
-        <div class="world-grid flagged-countries">
-          <div class="country-wrapper" *ngFor="let countrylist of Country_List">
-              <a class="country"  (click)=home(countrylist.name)>
-                <div class="flag-wrapper">
-                <img class="flag" src="../../assets/images/flag.png" alt="Flag br"/>
-              </div>
-                <span class="country-title">{{countrylist.name}}</span>
-              </a>
-          </div>
-        </div>
-    </div>
-</div>
-</section>
-
-<div class="container">
+<!DOCTYPE html>
+<html>
+   <head>
+     
+      <title>ONS</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="css/infinite-slider.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+     
+   </head>
+   <body>
+      <div class="container">
          <div class="ons-index0logo">
             <div class="col-md-9" style="float: none; margin: 0px auto;">
                <div class="main-ons-logo">
-                  <!-- <img src="images/olx.png"> -->
+                  <img src="images/olx.png">
                   <h3>Join the millions who buy and sell from each other everyday in local communities around the world.</h3>
                </div>
             </div>
@@ -30,17 +27,52 @@
                <h4>Find your community below</h4>
                <div class="col-md-12">
                   <div class="col-md-9" style="float: none; margin: 0px auto;     text-align: center;">
-                     <li *ngFor="let countrylist of Country_List">
-                        <a class="country"  (click)=home(countrylist.name)>
-                        <img class="flag" src="../../assets/images/flags/{{countrylist.name}}.png" alt="Flag "/><br>
-                        <span>{{countrylist.name}}</span>
+                     <li>
+                        <a href="">
+                        <img src="images/in.png"><br>
+                        <span>Brazil</span>
                         </a>
                      </li>
-                     
+                     <li>
+                        <a href="">
+                        <img src="images/in.png"><br>
+                        <span>india</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="">
+                        <img src="images/in.png"><br>
+                        <span>Indonesia</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="">
+                        <img src="images/in.png"><br>
+                        <span>Pakistan</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="">
+                        <img src="images/in.png"><br>
+                        <span>Portugal</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="">
+                        <img src="images/in.png"><br>
+                        <span>Romania</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="">
+                        <img src="images/in.png"><br>
+                        <span>South Africa</span>
+                        </a>
+                     </li>
                   </div>
                </div>
             </div>
-            <div class="flag-images-sec" style="display: none;">
+            <div class="flag-images-sec">
                <h4>More communities</h4>
                <div class="col-md-12">
                   <div class="col-md-9" style="float: none; margin: 0px auto;     text-align: center;">
@@ -104,18 +136,18 @@
          <div class="container">
             <div class="col-md-12">
                <div class="col-md-9" style="float: none; margin: 0px auto;">
-                  <h4>ONS is part of ONS Group, a network of leading marketplaces present in 30+ countries with 20+ brands.</h4>
+                  <h4>OLX is part of OLX Group, a network of leading marketplaces present in 30+ countries with 20+ brands.</h4>
                </div>
             </div>
             <div class="col-md-6">
                <div class="olx-part-sub-sec">
-                  <!-- <img src="images/office_olx_group.jpg" class="img-responsive"> -->
+                  <img src="images/office_olx_group.jpg" class="img-responsive">
                   <a href="">More about us</a>
                </div>
             </div>
             <div class="col-md-6">
                <div class="olx-part-sub-sec">
-                  <!-- <img src="images/_DSF3691.jpg" class="img-responsive"> -->
+                  <img src="images/_DSF3691.jpg" class="img-responsive">
                   <a href="">
                   Join our team
                   </a>
@@ -123,3 +155,8 @@
             </div>
          </div>
       </div>
+      <div class="onx-fooder">
+         <p>Copyright © 2020 OLX</p>
+      </div>
+   </body>
+</html>

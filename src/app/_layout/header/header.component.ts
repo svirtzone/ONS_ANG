@@ -20,6 +20,7 @@ export class HeaderComponent implements OnInit {
   Selected_Country:any;
   complexForm: FormGroup;
   RegisterForm: FormGroup;
+  LoginForm: FormGroup;
   public country: any = {
    pageLayout: localStorage.getItem('country')
 }
@@ -38,6 +39,11 @@ export class HeaderComponent implements OnInit {
             'email': [null, Validators.required],
             'password': [null, Validators.required],
             're-password': [null, Validators.required],
+        });
+    this.LoginForm = fb.group({
+            
+            'email': [null, Validators.required],
+            'password': [null, Validators.required]
         });
 
     translate.addLangs(['en', 'fr']);  
@@ -96,9 +102,19 @@ export class HeaderComponent implements OnInit {
   Register(value: any){
 
     let form = value;
-
     
     this.reg_loginservice.RegisterRequest(form).subscribe((data: any[])=>{
+          // this.HomeList = data;
+    });
+
+  }
+
+
+  Login(value: any){
+
+    let form = value;
+
+    this.reg_loginservice.LoginRequest(form).subscribe((data: any[])=>{
           // this.HomeList = data;
     });
 
