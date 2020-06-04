@@ -2,6 +2,7 @@ import { Component, OnInit ,ViewEncapsulation  } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { DataService } from '../../service/header.httpservice'; 
 import { HomeHttpService } from '../../service/home.httpservice'; 
+import { RegisterLoginService } from '../../service/Register-Login.httpservice'; 
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
@@ -18,11 +19,12 @@ export class HeaderComponent implements OnInit {
   Country_List:any;
   Selected_Country:any;
   complexForm: FormGroup;
+  RegisterForm: FormGroup;
   public country: any = {
    pageLayout: localStorage.getItem('country')
 }
 
-  constructor(fb: FormBuilder,public translate: TranslateService,private dataService: DataService,private listService: HomeHttpService) {
+  constructor(fb: FormBuilder,public translate: TranslateService,private dataService: DataService,private listService: HomeHttpService,private reg_loginservice: RegisterLoginService) {
     
 
 // initiate form
@@ -84,7 +86,7 @@ export class HeaderComponent implements OnInit {
 
   getcountries(){
 
-    this.listService.Countries().subscribe((data: any[])=>{
+    this.listService.Countries().subscribe((data: any)=>{
           this.Country_List = data.result;
           
     });
@@ -96,7 +98,7 @@ export class HeaderComponent implements OnInit {
     let form = value;
 
     
-    this.dataService.RegisterRequest(form).subscribe((data: any[])=>{
+    this.reg_loginservice.RegisterRequest(form).subscribe((data: any[])=>{
           // this.HomeList = data;
     });
 
