@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../../service/sidebar.httpservice'; 
+import { DataService } from '../../service/sidebar/sidebar.httpservice'; 
 
 @Component({
   selector: 'site-sidebar',

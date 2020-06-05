@@ -1,0 +1,292 @@
+.mobile-number-sec-one li {
+display: inline-block;
+}
+li.mobile-number-sec-pin-code span{
+padding: 8px 5px;
+margin-bottom: 0;
+font-size: 13px;
+font-weight: 400;
+line-height: 1.25;
+color: #495057;
+text-align: center;
+background-color: #e9ecef;
+border: 1px solid rgba(0, 0, 0, 0.15);
+border-radius: .25rem;
+top: -6px;
+position: relative;
+width: 35px;
+}
+li.std-code-sec-sec-pin-code span {
+padding: 8px 5px;
+margin-bottom: 0;
+font-size: 13px;
+font-weight: 400;
+line-height: 1.25;
+color: #495057;
+text-align: center;
+background-color: #e9ecef;
+border: 1px solid rgba(0, 0, 0, 0.15);
+border-radius: .25rem;
+width: 35px;
+position: relative;
+top: -6px;
+}
+.std-code-sec li {
+display: inline-block;
+}
+li.std-codess-two {
+width: 40%;
+}
+li.std-codess {
+width: 47%;
+}
+section.company-profile-sec ul.nav.nav-pills {
+margin-bottom: 22px;
+border-bottom: 1px solid #ccc;
+}
+section.company-profile-sec ul.nav.nav-pills li {
+-webkit-transition: 0.3s ease;
+transition: 0.3s ease;
+width: 24.8%;
+padding: 0;
+text-align: center;
+}
+section.company-profile-sec ul.nav.nav-pills li a{
+z-index: 1;
+display: block;
+box-sizing: border-box;
+background: transparent;
+padding: 15px 4px;
+color: #8b8b8a;
+text-decoration: none;
+text-transform: capitalize;
+font-size: 18px;
+}
+section.company-profile-sec ul.nav.nav-pills li.active a {
+color: #f37638;
+}
+.company-profile-sec .field {
+display: flex;
+flex-flow: column-reverse;
+margin-bottom: 25px;
+}
+.company-profile-sec label, .company-profile-sec input {
+transition: all 0.2s;
+touch-action: manipulation;
+font-size: 14px;
+}
+.company-profile-sec input {
+background-color: transparent;
+border: none;
+border-bottom: 1px solid #9e9e9e;
+font-size: 14px;
+border: 0;
+border-bottom: 1px solid #ccc;
+font-family: inherit;
+-webkit-appearance: none;
+border-radius: 0;
+padding: 0;
+cursor: text;
+}
+.company-profile-sec input:focus {
+outline: 0;
+border-bottom: 1px solid #666;
+}
+.company-profile-sec label {
+color: #7d7d7d;
+font-size: 14px;
+font-weight: 100;
+cursor: text;
+letter-spacing: 0.05em;
+}
+.company-profile-sec input:placeholder-shown + label {
+cursor: text;
+max-width: 66.66%;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+transform-origin: left bottom;
+transform: translate(0, 2.125rem) scale(0.9);
+font-size: 14px;
+}
+::-webkit-input-placeholder {
+opacity: 0;
+transition: inherit;
+}
+.company-profile-sec input:focus::-webkit-input-placeholder {
+opacity: 0;
+}
+.company-profile-sec input:not(:placeholder-shown) + label,
+.company-profile-sec input:focus + label {
+transform: translate(0, 0) scale(1);
+}
+section.company-profile-sec  select{
+background-color: transparent;
+border: none;
+border-bottom: 1px solid #9e9e9e;
+font-size: 14px;
+border: 0;
+border-bottom: 1px solid #ccc;
+font-family: inherit;
+-webkit-appearance: none;
+border-radius: 0;
+padding: 0;
+height: 40px;
+cursor: text;
+}
+section.company-profile-sec .inline-radio li {
+display: inline-block;
+float: left;
+margin: 0 9px 12px 0;
+width: 32%;
+}
+.business-upload-sec {
+width: 300px;
+vertical-align: middle;
+padding: 2px;
+border: 2px solid #f3f3f3;
+height: 300px;
+margin: 0 auto;
+position: relative;
+left: -10px;
+display: block;
+}
+.india-mart-buyer {
+border: 1px solid #f37638;
+overflow: auto;
+text-align: center;
+padding: 10px;
+}
+.india-mart-buyer h4 {
+color: #ccc;
+font-size: 14px;
+padding-top: 12px;
+color: #f37638;
+font-weight: 400;
+}
+.avatar-upload {
+position: relative;
+max-width: 205px;
+margin: 10px auto;
+}
+.avatar-upload .avatar-edit {
+position: absolute;
+right: 29px;
+z-index: 1;
+top: 10px;
+}
+.avatar-upload .avatar-edit input {
+display: none;
+}
+.avatar-upload .avatar-edit input + label {
+display: inline-block;
+width: 34px;
+height: 34px;
+margin-bottom: 0;
+border-radius: 100%;
+background: #FFFFFF;
+border: 1px solid transparent;
+box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+cursor: pointer;
+font-weight: normal;
+transition: all 0.2s ease-in-out;
+}
+.avatar-upload .avatar-edit input + label:hover {
+background: #f1f1f1;
+border-color: #d6d6d6;
+}
+.avatar-upload .avatar-edit input + label:after {
+content: "\f040";
+font-family: 'FontAwesome';
+color:#f37638;
+position: absolute;
+top: 10px;
+left: 0;
+right: 0;
+text-align: center;
+margin: auto;
+}
+section.company-profile-sec .tab-content {
+-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+background-color: #fff;
+-webkit-transition: 0.3s ease;
+transition: 0.3s ease;
+/* overflow: hidden; */
+}
+.avatar-upload .avatar-preview {
+margin: 0px auto;
+width: 146px;
+height: 146px;
+position: relative;
+border-radius: 100%;
+border: 2px solid #f37638;
+box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.avatar-upload .avatar-preview > div {
+width: 100%;
+height: 100%;
+border-radius: 100%;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+.field1 {
+margin-bottom: 25px;
+}
+.info_icon {
+width: 15px;
+height: 15px;
+background-color: #ADADAD;
+display: inline-block;
+color: #ffffff;
+text-align: center;
+line-height: 1.5;
+border-radius: 50%;
+font-style: normal;
+font-size: 11px;
+position: absolute;
+top: 2px;
+right: 14px;
+}
+span.info-iconss {
+text-align: right;
+position: relative;
+margin-top: -23px;
+}
+.otp-modal-body {
+text-align: center;
+text-align: center;
+overflow: auto;
+}
+.modal-body.otp-modal-body li {
+display: inline-block;
+width: 40px;
+margin: 10px 0px;
+}
+.modal-body.otp-modal-body li input{
+width: 100%;
+height: 40px;
+}
+.tooltip{
+width: 300px;
+}
+li.mobile-number-sec-mobile-num {
+width: 66%;
+}
+li.mobile-number-sec-mob-edit-sec {
+width: 21%;
+font-size: 23px;
+text-align: right;
+}
+li.mobile-number-sec-mob-edit-sec a{
+display: inline-block;
+padding: 0px 5px;
+}
+.mobile-number-sec-one.alternate-mob li.mobile-number-sec-mobile-num {
+width: 87%;
+}
+.mobile-number-sec-one.primary-email li.mobile-number-sec-mobile-num {
+width: 77%;
+}

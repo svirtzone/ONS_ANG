@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from "@angular/common";
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { RegisterLoginRoutingModule } from './register_login-routing';
-import { RegisterLoginComponent } from './register_login.component';
+import { RegisterLoginComponent } from './register_login/register_login.component';
 import { Routes, RouterModule } from '@angular/router';
 
 

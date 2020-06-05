@@ -12,6 +12,9 @@ export const ApplicationRoutes: Routes = [
     },
     {
         path: 'login', loadChildren: () => import('../app/Auth/register_login.module').then(m => m.RegisterLoginModule)
+    },
+    {
+        path: 'company-profile', loadChildren: () => import('../app/Company-Profile/company-profile.module').then(m => m.CompanyProfilePageModule)
     }
     
 ];

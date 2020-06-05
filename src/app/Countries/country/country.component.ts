@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HomeHttpService } from '../service/home.httpservice'; 
+import { CountriesHttpService } from '../../service/countries/countries.httpservice'; 
 import { ActivatedRoute, Router } from '@angular/router';
 // import * as $ from 'jquery';
 @Component({
@@ -10,14 +10,13 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class CountryComponent implements OnInit {
   Country_List:any;
   Country_name:any;
-  constructor(private dataService: HomeHttpService,private router: Router) {
+  constructor(private dataService: CountriesHttpService,private router: Router) {
     
   }
 
   ngOnInit() {
     this.dataService.Useripinfo().subscribe((data: any[])=>{
           
-          // this.Country_name=data.country;
           this.Country_name=data;
 
     });

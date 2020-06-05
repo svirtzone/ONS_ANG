@@ -1,5 +1,5 @@
 
-import { CountryComponent } from './country.component';
+import { CountryComponent } from './country/country.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 

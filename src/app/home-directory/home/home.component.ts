@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../../service/content.httpservice'; 
+import { DataService } from '../../service/content/content.httpservice'; 
 // import * as $ from 'jquery';
 @Component({
   selector: 'app-to-do',

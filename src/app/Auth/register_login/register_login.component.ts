@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RegisterLoginService } from '../service/Register-Login.httpservice'; 
+import { RegisterLoginService } from '../../service/register_login/Register-Login.httpservice'; 
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 // import * as $ from 'jquery';
 @Component({

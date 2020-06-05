@@ -8,7 +8,7 @@
           <div class="country-wrapper" *ngFor="let countrylist of Country_List">
               <a class="country"  (click)=home(countrylist.name)>
                 <div class="flag-wrapper">
-                <img class="flag" src="../../assets/images/flag.png" alt="Flag br"/>
+                <img class="flag" src="../../../assets/images/flag.png" alt="Flag br"/>
               </div>
                 <span class="country-title">{{countrylist.name}}</span>
               </a>
@@ -32,7 +32,7 @@
                   <div class="col-md-9" style="float: none; margin: 0px auto;     text-align: center;">
                      <li *ngFor="let countrylist of Country_List">
                         <a class="country"  (click)=home(countrylist.name)>
-                        <img class="flag" src="../../assets/images/flags/{{countrylist.name}}.png" alt="Flag "/><br>
+                        <img class="flag" src="../../../assets/images/flags/{{countrylist.name}}.png" alt="Flag "/><br>
                         <span>{{countrylist.name}}</span>
                         </a>
                      </li>

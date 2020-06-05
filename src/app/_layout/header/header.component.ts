@@ -1,8 +1,9 @@
 import { Component, OnInit ,ViewEncapsulation  } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { DataService } from '../../service/header.httpservice'; 
-import { HomeHttpService } from '../../service/home.httpservice'; 
-import { RegisterLoginService } from '../../service/Register-Login.httpservice'; 
+import { DataService } from '../../service/header/header.httpservice'; 
+import { HomeHttpService } from '../../service/home/home.httpservice'; 
+import { CountriesHttpService } from '../../service/countries/countries.httpservice'; 
+import { RegisterLoginService } from '../../service/register_login/Register-Login.httpservice'; 
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
@@ -25,7 +26,7 @@ export class HeaderComponent implements OnInit {
    pageLayout: localStorage.getItem('country')
 }
 
-  constructor(fb: FormBuilder,public translate: TranslateService,private dataService: DataService,private listService: HomeHttpService,private reg_loginservice: RegisterLoginService) {
+  constructor(fb: FormBuilder,public translate: TranslateService,private dataService: DataService,private listService: HomeHttpService,private reg_loginservice: RegisterLoginService,private countryservice:CountriesHttpService) {
     
 
 // initiate form
@@ -92,7 +93,7 @@ export class HeaderComponent implements OnInit {
 
   getcountries(){
 
-    this.listService.Countries().subscribe((data: any)=>{
+    this.countryservice.Countries().subscribe((data: any)=>{
           this.Country_List = data.result;
           
     });

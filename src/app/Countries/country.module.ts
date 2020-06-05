@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from "@angular/common";
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { CountryPageRoutingModule } from './country-page-routing';
-import { CountryComponent } from './country.component';
+import { CountryComponent } from './country/country.component';
 import { Routes, RouterModule } from '@angular/router';
 
 
@@ -17,7 +17,6 @@ import { Routes, RouterModule } from '@angular/router';
     CommonModule,
     ReactiveFormsModule,
     CountryPageRoutingModule,
-    
    
   ],
   providers: [],
