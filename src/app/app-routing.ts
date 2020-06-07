@@ -8,13 +8,13 @@ export const ApplicationRoutes: Routes = [
         path: 'home', loadChildren: () => import('../app/home-directory/home.module').then(m => m.HomePageModule)
     },
     {
-        path: '', loadChildren: () => import('../app/Countries/country.module').then(m => m.CountryPageModule)
+        path: '', loadChildren: () => import('../app/countries/country.module').then(m => m.CountryPageModule)
     },
     {
-        path: 'login', loadChildren: () => import('../app/Auth/register_login.module').then(m => m.RegisterLoginModule)
+        path: 'login', loadChildren: () => import('../app/auth/register_login.module').then(m => m.RegisterLoginModule)
     },
     {
-        path: 'company-profile', loadChildren: () => import('../app/Company-Profile/company-profile.module').then(m => m.CompanyProfilePageModule)
+        path: 'company-profile', loadChildren: () => import('../app/company-profile/company-profile.module').then(m => m.CompanyProfilePageModule)
     }
     
 ];
