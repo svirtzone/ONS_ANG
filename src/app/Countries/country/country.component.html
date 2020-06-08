@@ -1,5 +1,5 @@
 <header>
-  <div class="header-one">
+ <div class="header-one">
     <div class="container">
     <div class="col-md-4">
       <div class="col-md-3">
@@ -7,10 +7,21 @@
           <h2>ONS</h2>
         </div>
       </div>
-      
+      <ul class="header-one-left"><li> Help and info </li><li> Requirements </li><li> Safe trading </li><!--bindings={
+  "ng-reflect-ng-for-of": "Help and info,Requirements,Saf"
+}--></ul>
+    </div>
+     <div class="col-md-8">
+       <ul class="header-one-right">
+        <li><a class="messages">Messages</a></li>
+        <li><a class="notifications">Notifications</a></li>
+        <li><a class="login">Login</a></li>
+        <li><button class="place-ad">Place ad</button></li>
+      </ul>
     </div>
   </div>
   </div>
+   
   
 </header>
 <section class="world-section" style="display: none;">
@@ -139,7 +150,30 @@
          </div>
       </div>
 <footer>
-  <div class="footer-bottom">
-    <p>Copyright © 2020 ONS</p>
+
+  <div class="footer-top">
+    <div class="container">
+    <div class="footer-col" *ngFor="let data of f_data">
+        <h5>{{ data.d1 }}</h5>
+        <li><a href="">{{ data.d2 }}</a></li>
+        <li><a href=""> {{ data.d3 }}</a></li>
+        <li><a href="">{{ data.d4 }} </a></li>
+        <li><a href=""> {{ data.d5 }}</a></li>
+
+    </div>
+
+
+    <div class="footer-col">
+       <h5>Follow Us</h5>
+      <div class="socila-icons">
+      <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      <li><a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+    </div>
+    </div>
+  </div>
+</div>
+<div class="footer-bottom">
+  <p>Copyright © 2020 ONS</p>
   </div>
 </footer>

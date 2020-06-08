@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CountriesHttpService } from '../../service/countries/countries.httpservice'; 
+import { DataService } from '../../service/footer/footer.httpservice'; 
 import { ActivatedRoute, Router } from '@angular/router';
 // import * as $ from 'jquery';
 @Component({
@@ -10,7 +11,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class CountryComponent implements OnInit {
   Country_List:any;
   Country_name:any;
-  constructor(private dataService: CountriesHttpService,private router: Router) {
+  f_data:any;
+  constructor(private dataService: CountriesHttpService,private router: Router,private footerService: DataService) {
     
   }
 
@@ -19,6 +21,10 @@ export class CountryComponent implements OnInit {
           
           this.Country_name=data;
 
+    });
+
+    this.footerService.sendGetRequest().subscribe((data: any[])=>{
+          this.f_data = data;
     });
 
     setTimeout(()=>{    
